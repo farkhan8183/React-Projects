@@ -132,8 +132,8 @@ in navbar, now set logic that on every change in input will result in display of
           {/* Creating Cart Section: */}
 
 {/* cart */}
-<div className={`h-full w-[30%] bg-amber-50 fixed top-0 right-0 shadow-2xl ${showcart?"translate-x-0":"translate-x-full"} transition-all duration-500 bg-amber-100 overflow-auto         `}> {/*fixed: keep fixed on scrollin */} {/* imp: overflow auto: we can scroll the side bar. */}
-
+<div className={`h-full w-[95%] md:w-[50%] lg:w-[30%]   bg-amber-50 fixed top-0 right-0 shadow-2xl ${showcart?"translate-x-0":"translate-x-full"} transition-all duration-500 bg-amber-100 overflow-auto         `}> {/*fixed: keep fixed on scrollin */} {/* imp: overflow auto: we can scroll the side bar. */}
+              
  <header className='flex justify-between p-4 text-green-800 font-semibold text-[19px]'>
   <p>Order items</p>
   <IoClose className='cursor-pointer hover:text-[21px] font-bold'  onClick={()=>setshowcart(false)}/>
