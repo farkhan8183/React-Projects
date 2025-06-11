@@ -1,0 +1,28 @@
+.city{
+       background-color: rgb(113, 113, 131);
+    width: 450px;
+    height: 350px;
+    margin: 150px  500px;
+    padding:50px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+.input{
+    height: 30px;
+    width: 250px;
+    border-radius: 30px;
+
+}
+.button{
+border-radius: 10px;
+}
+.weather-info{
+    margin-top: 50px;
+    padding: 10px;
+    height: 200px;
+    background-color: rgb(30, 65, 65);
+    border-radius: 15px;
+}
+

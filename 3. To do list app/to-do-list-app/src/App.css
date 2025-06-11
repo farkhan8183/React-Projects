@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: rgb(5, 20, 1);
+  font-family: 'Arial', sans-serif; 
+}
+
+
+.box {
+  background-color: rgb(2, 9, 32);
+  width: 600px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centered the box perfectly */
+  border-radius: 15px; 
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+  transition: transform 0.3s ease; 
+}
+
+
+
+
+.task {
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  border: 2px solid #fff;
+  border-radius: 8px; 
+  background-color: #1e2a3d; 
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 20px; 
+  transition: background-color 0.3s ease;
+}
+
+.task:focus {
+  background-color: #3c4e70; /* Darker shade on focus */
+  border-color: #00c8c8; /* Light border color on focus */
+}
+
+
+.btn {
+  height: 35px;
+  width: 120px;
+  border-radius: 25px; 
+  background-color: #00c8c8; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00b0b0; 
+}
+
+
+.pair {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+/* Task display container */
+.dabba {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3c4e70;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px; /* Rounded corners */
+  position: relative;
+  transition: transform 0.3s ease; 
+}
+
+.dabba:hover {
+  transform: scale(1.03); 
+}
+
+
+.task_text {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  flex-grow: 1; /* Ensures the text expands to take available space */
+}
+
+
+.remove_btn {
+  height: 30px;
+  width: 90px;
+  border-radius: 15px; /* Rounded corners */
+  background-color: #e74c3c; /* Red color for delete */
+  color: white;
+  border: none;
+  position: absolute;
+  right: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.remove_btn:hover {
+  background-color: #c0392b; 
+}
+
+
+.rem_all {
+  height: 35px;
+  width: 180px;
+  border-radius: 25px;
+  background-color: #ff8c00; 
+  color: white;
+  border: none;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); /* Centering the Remove all button */
+  transition: background-color 0.3s ease;
+}
+
+.rem_all:hover {
+  background-color: #e67e22; 
+}
+
+/* Added animation for smooth task removal */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.dabba.removing {
+  animation: fadeOut 0.5s forwards; /* Fade-out effect when removing a task */
+}

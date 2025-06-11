@@ -1,0 +1,32 @@
+import React from 'react';
+import { MdFoodBank } from 'react-icons/md';  //install via: npm i react-icons
+import { BiSearch } from 'react-icons/bi';
+import { BsFillCartCheckFill } from 'react-icons/bs';
+
+const Navbar = () => {
+  return (
+    <div className="w-full h-[80px] bg-white flex items-center justify-between px-6"> {/* its main nav bar..[justify bw makes it child equal spaces and arrange left n right] */}
+      
+      {/* Logo Icon */}
+      <div className="flex items-center gap-2">
+        <MdFoodBank className="text-green-600 text-4xl" />
+        <h1 className="text-xl font-bold text-gray-800">Snackistan</h1>
+      </div>
+
+      {/* Search Bar */}
+      <div className="flex items-center bg-gray-100 px-4 py-2 rounded-full w-[400px]">
+        <BiSearch className="text-gray-500 text-xl mr-2" />
+        <input
+          type="text" placeholder="search your dish..."className="bg-transparent outline-none w-full text-sm"
+        />
+      </div>
+
+      {/* Cart Icon */}
+      <div className="bg-green-100 p-3 rounded-full cursor-pointer">
+        <BsFillCartCheckFill className="text-green-600 text-xl" />
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

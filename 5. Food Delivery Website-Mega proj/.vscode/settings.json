@@ -1,0 +1,5 @@
+{
+    "C_Cpp.copilotHover": "default",
+    "github.copilot.chat.codeGeneration.useInstructionFiles": false,
+    "github.copilot.chat.copilotDebugCommand.enabled": true
+}
