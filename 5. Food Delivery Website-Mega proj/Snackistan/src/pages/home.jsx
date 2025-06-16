@@ -14,6 +14,7 @@ import { useSelector } from 'react-redux' //r-a
 import { ToastContainer } from 'react-toastify';
 import { toast } from 'react-toastify';  
 
+
 const Home = () => {
 
   /* Logic for displaying dishes/cards according to category selected: */
@@ -140,7 +141,7 @@ in navbar, now set logic that on every change in input will result in display of
  </header>
 
 <div className='flex flex-col gap-5 hover:gap-6 transition-all duration-300'>
-    {items.map((item) => (
+    {items.map((item) => (        //r-c (items here is useSelector.)
       <Cardc
     key={item.id}
     id={item.id} //id is a prop here.

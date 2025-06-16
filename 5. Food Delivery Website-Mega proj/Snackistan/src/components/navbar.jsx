@@ -1,4 +1,4 @@
-//redux 5
+//redux 5=>  home.jsx
 import React, { useContext, useState } from 'react';
 import { MdFoodBank } from 'react-icons/md';  //install via: npm i react-icons
 import { BiSearch } from 'react-icons/bi';
